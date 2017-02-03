@@ -7,91 +7,493 @@
     <meta name="description" content="Page to see class tweets">
     <meta name="author" content="MCRG">
     <title>Lista Uniandes</title>
+    <!-- From bootsnip: http://bootsnipp.com/snippets/featured/update-cards -->
     <style>
-      .student-pic {
-        width: 20%;
-      	float: left;
-      	display: block;
+      .top-buffer {
+        margin-top:20px;
       }
-      .student-info {
-        width: 80%;
-      	float: left;
-      	display: block;
+      .block-update-card {
+        height: 100%;
+        border: 1px #FFFFFF solid;
+        width: 260px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 0;
+        padding: 0;
+        box-shadow: 1px 1px 8px #d8d8d8;
+        background-color: #FFFFFF;
+      }
+
+      .block-update-card .v-status {
+        width: 5px;
+        height: 80px;
+        float: left;
+        margin-right: 5px;
+        background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+      }
+      .block-update-card .update-card-MDimentions {
+        width: 80px;
+        height: 80px;
+      }
+      .block-update-card .update-card-body {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+      .block-update-card .update-card-body h4 {
+        color: #737373;
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .block-update-card .update-card-body p {
+        color: #737373;
+        font-size: 12px;
+      }
+
+
+      /*
+      Creating a block for social media buttons
+      */
+      .card-body-social {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .card-body-social .git {
+        color: black;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .card-body-social .twitter {
+        color: #19C4FF;
+        cursor: pointer;
+        margin-left: 10px;
       }
 	  </style>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Pretty buttons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row top-buffer">
+        <div class="col-md-2">
           <!-- filling -->
         </div>
         <div class="col-md-8">
           <!-- col-8 -->
-          <h1>WebDev Uniandes Students</h1>
+          <h1><center>WebDev Uniandes Students<br></center></h1>
+        </div>
+        <div class="col-md-2">
+          <!-- filling -->
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-2">
+      <div class="row top-buffer">
+        <div class="col-md-1">
           <!--filling-->
         </div>
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="row">
             <div class="col-md-3">
-              <div class="student">
-                <img class="student-pic" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic"></img>
-                <div class="student-info">
-                  Maria Camila Remolina Gutiérrez
-                  mc.remolina197@uniandes.edu.co
-                  <a href="https://github.com/mariacamilaremolinagutierrez"> GitHub</a>
-                	<a href="https://twitter.com/MCMCLearnsWeb"> @MCMCLearnsWeb </a>
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/_Zantler/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Santiago<br>
+                    Robayo
+                  </h4>
+                  <p>s.robayo222</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/srobayo222">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/_Zantler">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
                 </div>
-          	  </div>
+              </div>
             </div>
             <div class="col-md-3">
-              <div class="student">
-                <img class="student-pic" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic"></img>
-                <div class="student-info">
-                  Maria Camila Remolina Gutiérrez
-                  mc.remolina197@uniandes.edu.co
-                  <a href="https://github.com/mariacamilaremolinagutierrez"> GitHub</a>
-                	<a href="https://twitter.com/MCMCLearnsWeb"> @MCMCLearnsWeb </a>
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Maria Camila<br>
+                    Remolina Gutiérrez
+                  </h4>
+                  <p>mc.remolina197</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/mariacamilaremolinagutierrez">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/MCMCLearnsWeb">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
                 </div>
-          	  </div>
+              </div>
             </div>
             <div class="col-md-3">
-              <div class="student">
-                <img class="student-pic" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic"></img>
-                <div class="student-info">
-                  Maria Camila Remolina Gutiérrez
-                  mc.remolina197@uniandes.edu.co
-                  <a href="https://github.com/mariacamilaremolinagutierrez"> GitHub</a>
-                	<a href="https://twitter.com/MCMCLearnsWeb"> @MCMCLearnsWeb </a>
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/DanielAlthviz/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Daniel<br>
+                    Althviz Moré
+                  </h4>
+                  <p>d.althviz10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/dalthviz">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/DanielAlthviz">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
                 </div>
-          	  </div>
+              </div>
             </div>
             <div class="col-md-3">
-              <div class="student">
-                <img class="student-pic" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic"></img>
-                <div class="student-info">
-                  Maria Camila Remolina Gutiérrez
-                  mc.remolina197@uniandes.edu.co
-                  <a href="https://github.com/mariacamilaremolinagutierrez"> GitHub</a>
-                	<a href="https://twitter.com/MCMCLearnsWeb"> @MCMCLearnsWeb </a>
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/JosDanielFandi1/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    José Daniel<br>
+                    Fandiño
+                  </h4>
+                  <p>jd.fandino10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/jdfandino10">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/JosDanielFandi1">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
                 </div>
-          	  </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
           <!--filling-->
         </div>
       </div>
+
+      <div class="row top-buffer">
+        <div class="col-md-1">
+          <!--filling-->
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/_Zantler/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Santiago<br>
+                    Robayo
+                  </h4>
+                  <p>s.robayo222</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/srobayo222">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/_Zantler">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Maria Camila<br>
+                    Remolina Gutiérrez
+                  </h4>
+                  <p>mc.remolina197</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/mariacamilaremolinagutierrez">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/MCMCLearnsWeb">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/DanielAlthviz/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Daniel<br>
+                    Althviz Moré
+                  </h4>
+                  <p>d.althviz10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/dalthviz">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/DanielAlthviz">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/JosDanielFandi1/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    José Daniel<br>
+                    Fandiño
+                  </h4>
+                  <p>jd.fandino10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/jdfandino10">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/JosDanielFandi1">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <!--filling-->
+        </div>
+      </div>
+
+      <div class="row top-buffer">
+        <div class="col-md-1">
+          <!--filling-->
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/_Zantler/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Santiago<br>
+                    Robayo
+                  </h4>
+                  <p>s.robayo222</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/srobayo222">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/_Zantler">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Maria Camila<br>
+                    Remolina Gutiérrez
+                  </h4>
+                  <p>mc.remolina197</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/mariacamilaremolinagutierrez">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/MCMCLearnsWeb">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/DanielAlthviz/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Daniel<br>
+                    Althviz Moré
+                  </h4>
+                  <p>d.althviz10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/dalthviz">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/DanielAlthviz">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/JosDanielFandi1/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    José Daniel<br>
+                    Fandiño
+                  </h4>
+                  <p>jd.fandino10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/jdfandino10">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/JosDanielFandi1">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <!--filling-->
+        </div>
+      </div>
+
+      <div class="row top-buffer">
+        <div class="col-md-1">
+          <!--filling-->
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/_Zantler/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Santiago<br>
+                    Robayo
+                  </h4>
+                  <p>s.robayo222</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/srobayo222">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/_Zantler">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/mcmclearnsweb/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Maria Camila<br>
+                    Remolina Gutiérrez
+                  </h4>
+                  <p>mc.remolina197</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/mariacamilaremolinagutierrez">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/MCMCLearnsWeb">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/DanielAlthviz/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    Daniel<br>
+                    Althviz Moré
+                  </h4>
+                  <p>d.althviz10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/dalthviz">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/DanielAlthviz">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="media block-update-card">
+                <a class="pull-left">
+                  <img class="media-object update-card-MDimentions" src="https://twitter.com/JosDanielFandi1/profile_image?size=original" alt="Profile pic">
+                </a>
+                <div class="media-body update-card-body">
+                  <h4 class="media-heading">
+                    José Daniel<br>
+                    Fandiño
+                  </h4>
+                  <p>jd.fandino10</p>
+                  <div class="btn-toolbar card-body-social" role="toolbar">
+                    <a href="https://github.com/jdfandino10">
+                      <div class="btn-group fa fa-github-alt git"></div>
+                    </a>
+                    <a href="https://twitter.com/JosDanielFandi1">
+                      <div class="btn-group twitter fa fa-twitter"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <!--filling-->
+        </div>
+      </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
