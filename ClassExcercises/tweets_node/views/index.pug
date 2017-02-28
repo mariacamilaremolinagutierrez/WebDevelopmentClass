@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p #{title}
+
+  div.container-fluid
+    div.row
+      div.col-md-10
+        div.row
+          h1 Tweets
+          br
+        div.row
+          each tweet in tweets
+            div.tweet
+              div.row
+                div.col-md-4
+                  img.tweet_profile_pic(src=tweet.user.profile_image_url)
+                  div.tweet_name
+                    a(href='https://twitter.com/' + tweet.user.screen_name) @#{tweet.user.screen_name}
+                div.col-md-8
+                  div.tweet_text
+                    p #{tweet.text}
+              div.row
+                div.col-md-2
+                div.col-md-10
+                  br
+                  p Date: #{tweet.created_at}
